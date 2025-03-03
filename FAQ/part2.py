@@ -23,7 +23,7 @@ db = Chroma(
     )
 
 # Get the user query/promt text
-user_query = "মানিক কে?"
+user_query = "Answer in Bangla: যোগাযোগ মন্ত্রীর দুপুরে কি করার অভ্যাস এবং যোগাযোগ মন্ত্রীর পুরো নাম কি?"
 
 
 # retrieve the most relevent chunks from the database for the user query
@@ -56,10 +56,14 @@ if len(relevennt_chunks) > 0:
     """
 
     # create the chat model and generate response
-    llm = ChatOpenAI(model="gpt-3.5-turbo")
+    llm = ChatOpenAI(model="gpt-4o")
     response = llm.invoke(modified_prompt)
     print("\n--- Answer ---")
     print(response.content)
+
+     # save the response to a file with UTF-8 encoding
+    with open("AIresponse.txt", "w", encoding="utf-8") as f:
+        f.write(response.content)
 else:
     print("No relevant documents found for the query.")
 

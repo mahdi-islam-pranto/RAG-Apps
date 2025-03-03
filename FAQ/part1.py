@@ -23,6 +23,7 @@ def load_documents(folder_path: str) -> List[Document]:
         documents.extend(loader.load())
     return documents
 
+
 # Create a text splitter
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=300,
