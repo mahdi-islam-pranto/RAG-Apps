@@ -23,7 +23,7 @@ db = Chroma(
     )
 
 # Get the user query/promt text
-user_query = "Answer in Bangla: যোগাযোগ মন্ত্রীর দুপুরে কি করার অভ্যাস এবং যোগাযোগ মন্ত্রীর পুরো নাম কি?"
+user_query = "Query: tell me about the graphics of the book The Gale Encyclopedia of Medicine 2?"
 
 
 # retrieve the most relevent chunks from the database for the user query
@@ -58,6 +58,8 @@ if len(relevennt_chunks) > 0:
     # create the chat model and generate response
     llm = ChatOpenAI(model="gpt-4o")
     response = llm.invoke(modified_prompt)
+    print("\n--- Prompt ---")
+    print(modified_prompt)
     print("\n--- Answer ---")
     print(response.content)
 
