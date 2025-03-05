@@ -8,42 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 import os
 
-## fast api
-from fastapi import FastAPI , File, UploadFile, Form
-from pydantic import BaseModel
-
-app = FastAPI()
-
-
-# Function for upload file from user
-
-@app.post("/uploadfile/")
-async def create_upload_file(files: List[UploadFile]):
-    # Create documents directory if it doesn't exist
-    documents_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "documents")
-    os.makedirs(documents_dir, exist_ok=True)
-    
-    uploaded_files = []
-    for file in files:
-        try:
-            file_path = os.path.join(documents_dir, file.filename)
-            with open(file_path, "wb") as f:
-                contents = await file.read()
-                f.write(contents)
-            uploaded_files.append({
-                "filename": file.filename,
-                "status": "success"
-            })
-        except Exception as e:
-            uploaded_files.append({
-                "filename": file.filename,
-                "status": "error",
-                "error": str(e)
-            })
-    
-    return {"uploaded_files": uploaded_files}
-    
-
+# load the documents from the folder
 def load_documents(folder_path: str) -> List[Document]:
     documents = []
     for filename in os.listdir(folder_path):
@@ -66,7 +31,6 @@ text_splitter = RecursiveCharacterTextSplitter(
     length_function=len,
     separators=["\n\n", "\n", " ", ""]  # Added more separators
 )
-
 
 # Get the current directory
 current_dir = os.path.dirname(os.path.abspath(__file__))
