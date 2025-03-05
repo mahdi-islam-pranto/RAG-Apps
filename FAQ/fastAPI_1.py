@@ -16,6 +16,7 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
+# output response model
 class ProcessingResponse(BaseModel):
     status: str
     message: str
