@@ -76,7 +76,7 @@ async def create_upload_file(files: List[UploadFile]):
 
                 # Split documents
         text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=300,
+            chunk_size=500,
             chunk_overlap=50,
             length_function=len,
             separators=["\n\n", "\n", " ", ""]
@@ -85,7 +85,7 @@ async def create_upload_file(files: List[UploadFile]):
 
         # Initialize embedding model
         embedding_model = OpenAIEmbeddings(
-            model="text-embedding-3-small"
+            model="text-embedding-ada-002"
         )
 
 

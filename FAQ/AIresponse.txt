@@ -1,7 +1,17 @@
-প্রোবিং প্রশ্নের জন্য আপনি গ্রাহককে বলতে পারেন:
+For a customer on hold, the agent can say:
 
-"স্যার/ম্যাডাম, অনুগ্রহ করে আপনার দাবি বা অভিযোগটি বিস্তারিত জানাবেন যাতে আমরা আপনার সহায়তা করতে পারি। আপনার প্রয়োজন অনুযায়ী আমরা পরিবর্তন করলাম আপনি কি আমাদের সেবা গ্রহণ করবেন?" 
+"দয়া করে লাইনটি ধরে রাখুন, আমারা শীঘ্রই আপনার সাথে আবার যোগাযোগ করব।" (Please hold the line, we will reconnect with you shortly.)
 
-কল ট্রান্সফারের সময় বলুন:
+If the customer needs further assistance after the call, the agent can say:
 
-"একটি মুহূর্তের জন্য দয়া করে সাহায্য করবেন? আমি আপনার কলটি আমাদের সংশ্লিষ্ট ব্যক্তির কাছে স্থানান্তর করছি যিনি আপনাকে সহায়তা করতে পারেন। আমাদের সঙ্গে যুক্ত থাকার জন্য ধন্যবাদ।"
+"যদি আপনার আরও সহায়তার প্রয়োজন হয়, দয়া করে আমাদের অফিসিয়াল হটলাইন নম্বর 16457-তে কল করুন।" (If you require further assistance, please call our official hotline number 16457.)
+
+Additionally, to ensure proper etiquette, remember to include:
+
+- "দয়া করে" (Please) when making a request.
+- "দুঃখিত" (Sorry) if the customer shares something sad.
+- "ধন্যবাদ" (Thank you) when the customer provides helpful information.
+
+And for closing:
+
+"সায়র/ম্যাডাম, গ্রীন ডেল্টা ইন্সুরেন্স-এ কল করার জন্য ধন্যবাদ। আপনার দিনটি শুভ হোক।" (Sir/Madam, thank you for calling Green Delta Insurance. Have a great day.)

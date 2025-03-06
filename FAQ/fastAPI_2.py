@@ -3,6 +3,7 @@ from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI 
+from langchain_deepseek import ChatDeepSeek
 from langchain_core.prompts import ChatPromptTemplate
 load_dotenv()
 
@@ -79,7 +80,8 @@ async def get_response(user_query: str = Form):
             # put the relevant chunks + user query into the LLM model openai and generate the answer 
             
             # create the chat model and generate response
-            llm = ChatOpenAI(model="gpt-4o")
+            # llm = ChatOpenAI(model="gpt-4o")
+            llm = ChatDeepSeek(model="deepseek-chat")
             response = llm.invoke(final_modified_prompt)
             print("\n--- Prompt ---")
             print(final_modified_prompt)
