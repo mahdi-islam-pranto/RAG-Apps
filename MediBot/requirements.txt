@@ -1,0 +1,8 @@
+langchain
+langchain_community
+langchain_chroma
+dotenv
+pypdf
+langchain_openai
+sentence-transformers
+langchain-huggingface
