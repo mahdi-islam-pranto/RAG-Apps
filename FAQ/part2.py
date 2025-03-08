@@ -33,10 +33,11 @@ retriver = db.as_retriever(
     search_type="mmr",  # Change to MMR (Maximal Marginal Relevance)
     search_kwargs={
         "k": 4,  # Increase number of results
-        "fetch_k": 20,  # Fetch more documents initially
+        "fetch_k": 40,  # Fetch more documents initially
         "lambda_mult": 0.5  # Balance between relevance and diversity
     }
 )
+
 
 relevennt_chunks = retriver.invoke(user_query)
 
