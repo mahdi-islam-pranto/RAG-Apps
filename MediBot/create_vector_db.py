@@ -4,10 +4,6 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 from typing import List
-from langchain.embeddings.base import Embeddings
-import torch
-from transformers import AutoTokenizer, AutoModel
-from langchain.vectorstores import FAISS
 from dotenv import load_dotenv
 import os
 load_dotenv()
@@ -51,38 +47,17 @@ print("Length of Text Chunks: ", len(text_chunks))
 print(text_chunks[2])
 
 
-
-# Load BanglaBERT tokenizer and model
-model_name = "sagorsarker/bangla-bert-base"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModel.from_pretrained(model_name)
 # Step 3: Create Vector Embeddings 
 
-class BanglaBERTEmbeddings(Embeddings):
-    def __init__(self, model, tokenizer):
-        self.model = model
-        self.tokenizer = tokenizer
+def get_embedding_model():
+    embedding_model=HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    return embedding_model
 
-    def embed_documents(self, texts: List[str]) -> List[List[float]]:
-        inputs = self.tokenizer(texts, padding=True, truncation=True, return_tensors="pt", max_length=512)
-        with torch.no_grad():
-            outputs = self.model(**inputs)
-        embeddings = outputs.last_hidden_state[:, 0, :].squeeze()
-        return embeddings.numpy().tolist()
+embedding_model=get_embedding_model()
 
-    def embed_query(self, text: str) -> List[float]:
-        return self.embed_documents([text])[0]
-
-# Initialize the custom BanglaBERT embedding class
-bangla_bert_embeddings = BanglaBERTEmbeddings(model, tokenizer)
-
-
-# Step 4: Create Vector Store
-
-
-# Generate embeddings and create a FAISS vector store
+# Step 4: Store embeddings in FAISS
 DB_FAISS_PATH="vectorstore/db_faiss"
-vector_store = FAISS.from_documents(text_chunks, embedding=bangla_bert_embeddings)
+db=FAISS.from_documents(text_chunks, embedding_model)
+db.save_local(DB_FAISS_PATH)
 
 
-vector_store.save_local(DB_FAISS_PATH)
