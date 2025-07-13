@@ -1,15 +1,13 @@
 import os
-
 from langchain_huggingface import HuggingFaceEndpoint
 from langchain_core.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-
 from dotenv import load_dotenv
 load_dotenv()
 
-# Step 1: Setup LLM (Mistral with HuggingFace)
+# Step 1: Setup LLM (Gemma-3 with HuggingFace)
 HF_TOKEN=os.environ.get("HF_TOKEN")
 HUGGINGFACE_REPO_ID="google/gemma-3-27b-it"
 
@@ -29,12 +27,12 @@ def load_llm(huggingface_repo_id):
 CUSTOM_PROMPT_TEMPLATE = """
 Use the pieces of information provided in the context to answer user's question.
 If you dont know the answer, just say that you dont know, dont try to make up an answer. 
-Dont provide anything out of the given context
+Dont provide anything out of the given context. Always respond in Bangla language.
 
 Context: {context}
 Question: {question}
 
-Start the answer directly. No small talk please.
+Start the answer directly. No small talk please. Always respond in Bangla language.
 """
 
 def set_custom_prompt(custom_prompt_template):
@@ -61,4 +59,3 @@ user_query=input("Write Query Here: ")
 response=qa_chain.invoke({'query': user_query})
 print("RESULT: ", response["result"])
 print("SOURCE DOCUMENTS: ", response["source_documents"])
-
