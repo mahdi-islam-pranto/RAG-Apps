@@ -1,0 +1,30 @@
+langchain
+langchain-core
+langchain-openai
+
+# Web Framework and Server
+fastapi
+uvicorn
+
+# Data Validation
+pydantic
+
+# Environment Variables
+python-dotenv
+
+# Optional: For search and embeddings (if needed)
+faiss-cpu
+sentence-transformers
+# rapidfuzz
+rapidfuzz
+langchain_community
+langchain_huggingface
+
+# For document loading and processing
+pypdf
+docx2txt
+
+# text splitting
+langchain-text-splitters
+
+python-multipart

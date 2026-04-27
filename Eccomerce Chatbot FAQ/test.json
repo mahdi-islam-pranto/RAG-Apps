@@ -1,0 +1,55 @@
+{
+    "response": "This is a placeholder response.",
+    "retrieved_documents": {
+        "strategy": "hybrid",
+        "documents": [
+            {
+                "id": "930fb6a9-a664-4733-b5cd-2a630fe0e897",
+                "metadata": {
+                    "source": "D:\\hobby projects\\python\\iHelpBD ai projects live\\ihelp_ai_projects\\ai-chatbot-app\\AI Integration\\documents\\AI profile of iHelpBD.docx"
+                },
+                "page_content": "Benefits\n\nReduce call center operational costs\n\nProvide instant customer support\n\nImprove customer satisfaction\n\nReduce agent workload\n\n\n\n2. AI Chatbot Solutions\n\nWe develop advanced AI chatbots powered by Agentic AI and Retrieval-Augmented Generation (RAG) to automate communication across websites, messaging platforms, and mobile applications.\n\nThese chatbots can perform complex tasks rather than simply answering scripted questions.\n\nOur Chatbot Solutions\n\nAppointment Booking Chatbot\n\nThis chatbot allows customers to easily schedule appointments through conversation.\n\nCapabilities include:",
+                "type": "Document"
+            },
+            {
+                "id": "866ad0dd-ceb7-4c22-ae5e-afa747ea1f4a",
+                "metadata": {
+                    "source": "D:\\hobby projects\\python\\iHelpBD ai projects live\\ihelp_ai_projects\\ai-chatbot-app\\AI Integration\\documents\\AI profile of iHelpBD.docx"
+                },
+                "page_content": "Capabilities include:\n\nProduct search and recommendations\n\nOrder placement\n\n\nOrder tracking\n\nCustomer support\n\nIntegration with e-commerce platforms\n\n\nThis enables businesses to provide a conversational shopping experience for their customers.\n\n\n\nCustomer Query Handling Chatbot\n\nThis chatbot is designed to handle large volumes of customer inquiries automatically.\n\nCapabilities include:\n\nAnswering product or service questions\n\nProviding company policy information\n\nTroubleshooting basic issues\n\nEscalating complex queries to human agents when needed\n\n\n3. Bangla Speech AI (STT & TTS)",
+                "type": "Document"
+            },
+            {
+                "id": "a0f88713-47aa-4c06-817f-e9f89b3903a2",
+                "metadata": {
+                    "source": "D:\\hobby projects\\python\\iHelpBD ai projects live\\ihelp_ai_projects\\ai-chatbot-app\\AI Integration\\documents\\AI profile of iHelpBD.docx"
+                },
+                "page_content": "Appointment Booking Chatbot\n\nThis chatbot allows customers to easily schedule appointments through conversation.\n\nCapabilities include:\n\nFinding available time slots\n\nSelecting service providers or doctors\n\nBooking appointments\n\nConfirming reservations\n\nIntegrating with scheduling systems\n\n\nThis solution is ideal for:\n\nHospitals\n\nClinics\n\nService centers\n\nConsultation businesses\n\n\n\n\nE-commerce Product Ordering Chatbot\n\nThis AI agent helps customers browse and order products through a conversational interface.\n\nCapabilities include:\n\nProduct search and recommendations\n\nOrder placement",
+                "type": "Document"
+            },
+            {
+                "id": "6368093f-e068-42f2-b92e-8ac794f8ea40",
+                "metadata": {
+                    "producer": "Skia/PDF m136 Google Docs Renderer",
+                    "creator": "PyPDF",
+                    "creationdate": "",
+                    "title": "Daraz",
+                    "source": "D:\\hobby projects\\python\\iHelpBD ai projects live\\ihelp_ai_projects\\ai-chatbot-app\\AI Integration\\documents\\Daraz.pdf",
+                    "total_pages": 151,
+                    "page": 47,
+                    "page_label": "48"
+                },
+                "page_content": "AskDaraz  is  an  AI  (Artificial  Intelligence)  chatbot  designed  to  provide  assistance  for  \nall\n \nyour\n \nshopping\n \nneeds\n \nby\n \noffering\n \npersonalised\n \nshopping\n \nrecommendations\n \ninstantly.\n \nAs  an  AI-powered  virtual  shopping  assistant,  AskDaraz  enables  users  to  chat  with  \nthe\n \nAI\n \nchatbot\n \nand\n \nget\n \noffered\n \npersonalised\n \nrecommendations,\n \nstreamlining\n \nthe\n \nentire\n \nshopping\n \nprocess.\n \nIt\n \nrefines\n \nand\n \nanalyses\n \nuser\n \nrequirements,\n \ngoes\n \nthrough\n \nmillions\n \nof\n \nproducts\n \nacross\n \nmultiple\n \ncategories,\n \nand\n \nrecommends\n \nproducts,\n \nstyles",
+                "type": "Document"
+            },
+            {
+                "id": "c677835e-e578-4b3b-94f3-388d2b19c546",
+                "metadata": {
+                    "source": "D:\\hobby projects\\python\\iHelpBD ai projects live\\ihelp_ai_projects\\ai-chatbot-app\\AI Integration\\documents\\AI profile of iHelpBD.docx"
+                },
+                "page_content": "AI Solutions & Capabilities Overview of iHelpBD\n\n\n\nTransforming Business Operations with Artificial Intelligence\n\nOur AI Department is dedicated to developing intelligent solutions that help organizations automate operations, improve customer engagement, and extract meaningful insights from data. We design and deploy advanced AI systems using technologies such as Agentic AI, Retrieval-Augmented Generation (RAG), Speech AI, and Conversational AI.",
+                "type": "Document"
+            }
+        ]
+    }
+}

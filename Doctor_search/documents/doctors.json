@@ -1,0 +1,102 @@
+[
+  {
+    "doctor_id": "D001",
+    "name": "Dr. Mahmudul Hasan",
+    "department": "Cardiology"
+  },
+  {
+    "doctor_id": "D002",
+    "name": "Dr. Farzana Akter",
+    "department": "Gynecology"
+  },
+  {
+    "doctor_id": "D003",
+    "name": "Dr. Abdul Karim",
+    "department": "General Medicine"
+  },
+  {
+    "doctor_id": "D004",
+    "name": "Dr. Nusrat Jahan",
+    "department": "Dermatology"
+  },
+  {
+    "doctor_id": "D005",
+    "name": "Dr. Md. Ashraful Islam",
+    "department": "Orthopedics"
+  },
+  {
+    "doctor_id": "D006",
+    "name": "Dr. Shakil Ahmed",
+    "department": "Neurology"
+  },
+  {
+    "doctor_id": "D007",
+    "name": "Dr. Tanzina Rahman",
+    "department": "Orthopedics"
+  },
+  {
+    "doctor_id": "D008",
+    "name": "Dr. Md. Rakibul Hossain",
+    "department": "Medicine"
+  },
+  {
+    "doctor_id": "D009",
+    "name": "Dr. Samia Sultana",
+    "department": "Cardiology"
+  },
+  {
+    "doctor_id": "D010",
+    "name": "Dr. Imran Kabir",
+    "department": "Medicine"
+  },
+  {
+    "doctor_id": "D011",
+    "name": "Dr. Md. Saiful Islam",
+    "department": "Neurology"
+  },
+  {
+    "doctor_id": "D012",
+    "name": "Dr. Rashed Mahmud",
+    "department": "Gastroenterology"
+  },
+  {
+    "doctor_id": "D013",
+    "name": "Dr. Ayesha Siddika",
+    "department": "Gastroenterology"
+  },
+  {
+    "doctor_id": "D014",
+    "name": "Dr. Md. Jahangir Alam",
+    "department": "General Medicine"
+  },
+  {
+    "doctor_id": "D015",
+    "name": "Dr. Sabrina Islam",
+    "department": "Gynecology"
+  },
+  {
+    "doctor_id": "D016",
+    "name": "Dr. Md. Anwar Hossain",
+    "department": "Hematology"
+  },
+  {
+    "doctor_id": "D017",
+    "name": "Dr. Fahim Rahman",
+    "department": "Cardiology"
+  },
+  {
+    "doctor_id": "D018",
+    "name": "Dr. Jannatul Ferdous",
+    "department": "Orthopedics"
+  },
+  {
+    "doctor_id": "D019",
+    "name": "Dr. Md. Nazmul Ahsan",
+    "department": "Hepatology"
+  },
+  {
+    "doctor_id": "D020",
+    "name": "Dr. Sadiqur Rahman",
+    "department": "General Surgery"
+  }
+]
