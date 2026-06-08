@@ -6,9 +6,21 @@ from rag_pipeline import  loaded_vector_store
 from build_vector_store import all_chunks
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_google_genai import ChatGoogleGenerativeAI
+import mlflow
 from dotenv import load_dotenv
 load_dotenv()
 
+
+# Calling autolog for LangChain will enable trace logging.
+mlflow.langchain.autolog()
+
+
+# Optional: Set a tracking URI and an experiment
+mlflow.set_experiment("LangChainRAGExperiment")
+mlflow.set_tracking_uri("http://localhost:5000")
+
+# Initialize FastAPI app
 app = FastAPI(
     title="iHelpBD AI Chatbot API",
     description="API for question-answering using RAG pipeline with uploaded documents.",
@@ -30,7 +42,9 @@ class Question(BaseModel):
     text: str = Field(..., title="The question to ask")
     
 # define llm
-llm = ChatOpenAI(model='gpt-4o-mini')
+# llm = ChatOpenAI(model='gpt-4o-mini')
+# gemini llm 
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite")
 
 # define system prompt
 SYSTEM_PROMPT = """
@@ -103,6 +117,7 @@ def ask_question(question: Question = Form(...)):
             "success": False,
             "message": "Error invoking the AI model",
             "status_code": 500,
+            "error": f"Error invoking the AI model: {str(e)}"
         }
     
     # server status code

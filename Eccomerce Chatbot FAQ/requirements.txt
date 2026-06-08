@@ -2,6 +2,9 @@ langchain
 langchain-core
 langchain-openai
 
+# tracing
+mlflow
+
 # Web Framework and Server
 fastapi
 uvicorn
