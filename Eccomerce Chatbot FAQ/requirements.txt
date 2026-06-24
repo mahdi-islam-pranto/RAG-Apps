@@ -4,6 +4,7 @@ langchain-openai
 
 # tracing
 mlflow
+psycopg2-binary
 
 # Web Framework and Server
 fastapi
@@ -31,3 +32,4 @@ docx2txt
 langchain-text-splitters
 
 python-multipart
+
