@@ -2,6 +2,10 @@
 
 A Retrieval-Augmented Generation (RAG) based FAQ assistant that indexes uploaded documents, creates a local vector store, and answers user questions grounded in the uploaded content.
 
+## Project screenshot
+
+![Customer Support Chatbot FAQ screenshot](screenshots/rag%20chatbot%20ss.png)
+
 **Key features**
 
 - Hybrid retrieval (fuzzy + semantic) over an indexed document corpus.
